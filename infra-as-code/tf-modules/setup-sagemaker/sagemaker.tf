@@ -38,8 +38,3 @@ resource "aws_sagemaker_user_profile" "sagemaker_user" {
   }
 }
 
-# Create a SageMaker JupyterLabSpace
-resource "aws_sagemaker_space" "jupyterlab_space" {
-  domain_id  = aws_sagemaker_domain.sagemaker_domain.id
-  space_name = "mlops-learner-space"
-}

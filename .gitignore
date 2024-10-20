@@ -10,3 +10,4 @@
 terraform.rc
 
 .terraform.lock.hcl
+.DS_store

@@ -1,5 +1,5 @@
 resource "aws_iam_role" "sagemaker_execution_role" {
-  name = "SageMakerExecutionRole"
+  name = "LearnMlOpsSageMakerExecutionRole"
   assume_role_policy = jsonencode({
     "Version" : "2012-10-17",
     "Statement" : [{
