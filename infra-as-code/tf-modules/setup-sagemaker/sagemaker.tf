@@ -38,3 +38,10 @@ resource "aws_sagemaker_user_profile" "sagemaker_user" {
   }
 }
 
+# resource "aws_sagemaker_app" "canvas" {
+#   domain_id         = aws_sagemaker_domain.sagemaker_domain.id
+#   user_profile_name =  "mlops-learner"
+#   app_name          = "default"
+#   app_type          = "Canvas"
+#   depends_on = [ aws_sagemaker_user_profile.sagemaker_user ]
+# }
