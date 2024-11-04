@@ -44,7 +44,7 @@ if __name__ == "__main__":
     df["not_working"] = df["job"].isin(["student", "retired", "unemployed"]).astype(int)
 
     # Drop non-informative or unnecessary columns
-    df = df.drop(['duration', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed'], axis=1)
+    df = df.drop(['duration', 'emp_var_rate', 'cons_price_idx', 'cons_conf_idx', 'euribor3m', 'nr_employed'], axis=1)
 
     # Apply one-hot encoding to all categorical features in the dataframe
     df = pd.get_dummies(df)
